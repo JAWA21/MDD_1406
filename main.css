@@ -1,0 +1,46 @@
+
+body {
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #000;
+}
+
+hr {
+  border-color: #999999;
+  max-width: 400px;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+.tagline-divider {
+  margin: 15px auto 3px;
+  border-color: #999999;
+  max-width: 250px;
+}
+
+.box {
+  margin-bottom: 20px;
+  padding: 30px 15px;
+}
+
+
+footer {
+  background: #fff;
+  background: rgba(255,255,255,0.9);
+  margin-top: 45px;
+}
