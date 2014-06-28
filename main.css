@@ -29,6 +29,11 @@ hr {
   color: #A58FA8;
 }
 
+.header {
+  z-index: 2;
+  /*background-image: url(https://scontent-a-iad.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10441007_10202180539176445_7955040795142235919_n.jpg);*/
+}
+
 .brand-name {
   font-weight: 700;
   font-size: 1.5em;
@@ -44,14 +49,38 @@ hr {
   max-width: 250px;
 }
 
-.box {
-  margin-bottom: 20px;
-  padding: 30px 15px;
+.nav>li>a {
+  color: #A58FA8;
 }
 
-a:hover {
+.box {
+  padding: 30px 15px 15px;
+}
+
+.nav li a:hover {
   text-decoration: none;
   font-weight: 400;
+  background-color: #A58FA8;
+  color: #fafafa;
+}
+
+.hero {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+#about {
+  /*margin-left: 50px;*/
+}
+
+.about p{
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.me {
+  float: left;
+  z-index: 1;
 }
 
 .imgs {
