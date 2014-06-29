@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
   /*color: #594b3f;*/
   color: #48454C;
-
+  padding-top: 50px;
 }
 
 p {
@@ -86,6 +86,13 @@ hr {
 .imgs {
   margin-right: 5px;
   margin-top: 30px;
+}
+
+.form-control:focus {
+  border-color: #f36d28;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(243, 109, 40, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(243, 109, 40, 0.6);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(243, 109, 40, 0.6);
 }
 
 

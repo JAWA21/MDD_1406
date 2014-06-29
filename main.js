@@ -9,6 +9,12 @@ $(function() {
       });
   }
 
+  // back to top click
+  $('#backToTopBtn').click(function(){
+      $('html,body').animate({scrollTop:0},'slow');return false;
+  });
+
+
   // smooth scrolling from nav
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

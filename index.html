@@ -12,41 +12,40 @@
 
 </head>
 <body>
-    <div class="container">
-      <div class="row">
-        <div class="box">
-          <div class="col-lg-12 text-center header">
-            <h1><small class="welcome">Welcome to</small><hr class="tagline-divider"><span class="brand-name"><b>Jeanna Anderson's portfolio</b></span><hr class="tagline-divider"></h1>
-            <ul class="nav nav-pills nav-justified">
-              <li><a href="#about" class="active">About</a></li>
-              <li><a href="#port">Portfolio</a></li>
-              <li><a href="#resume">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="col-lg-12 text-center header">
+          <h1><small class="welcome">Welcome to</small><hr class="tagline-divider"><span class="brand-name"><b>Jeanna Anderson's portfolio</b></span><hr class="tagline-divider"></h1>
+          <ul class="nav nav-pills nav-justified">
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#port">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 hero">
+        <img class="img-responsive" src="https://lh6.googleusercontent.com/-xZh_WQW6clw/TNAT0_n5z4I/AAAAAAAAENs/avrpwIwge3k/w558-h554-no/bw3.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="box">
+        <div class="col-lg-12" id="about">
+          <div class="col-lg-5 text-center header me">
+            <img class="img-circle me" height="140" width="140" src="https://scontent-a-iad.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10441007_10202180539176445_7955040795142235919_n.jpg">
+          </div>
+            <div class="col-xs-7">
+            <p class="about lead">Hey everyone! Let's see a little about myself. I love photography, music, technology, saying something in very few words, and of course movies (saw too many last year!).</p>
+            <p>Currently studying Web Design and Development. Graduation date in September! Scared and excited am I!</p>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-lg-12 hero">
-<img src="https://lh6.googleusercontent.com/-xZh_WQW6clw/TNAT0_n5z4I/AAAAAAAAENs/avrpwIwge3k/w558-h554-no/bw3.jpg" alt="">
-      </div>
-      </div>
-
-      <div class="row">
-        <div class="box">
-          <div class="col-lg-12" id="about">
-            <div class="col-lg-5 text-center header me">
-              <img class="img-circle me" height="140" width="140" src="https://scontent-a-iad.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10441007_10202180539176445_7955040795142235919_n.jpg">
-            </div>
-              <div class="col-xs-7">
-
-              <p class="about lead">Hey everyone! Let's see a little about myself. I love photography, music, technology, saying something in very few words, and of course movies (saw too many last year!).</p>
-              <p>Currently studying Web Design and Development. Graduation date in September! Scared and excited am I!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
 
       <div class="col-lg-12 port" id="port">
@@ -150,8 +149,37 @@
         <h2>Resume</h2>
       </div><!--/span-->
 
+<!-- Contact form -->
       <div class="col-lg-12 port" id="contact">
         <h2>Contact</h2>
+
+        <form class="form-horizontal" role="form" action="mail.php" method="post" id="contactForm">
+          <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">Your Name</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputName" placeholder="What's your mom call you?">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Your Email</label>
+            <div class="col-sm-4">
+              <input type="email" class="form-control" id="inputEmail" placeholder="How do people get in contact with you?">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputComment" class="col-sm-2 control-label">Message</label>
+            <div class="col-sm-4">
+              <textarea class="form-control" rows="3" id="inputComment" placeholder="What's up?"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-4">
+              <button type="submit" class="btn btn-default pull-right">Send</button>
+            </div>
+          </div>
+        </form>
       </div><!--/span-->
 
     </div><!-- /.container -->
@@ -171,11 +199,11 @@
     </footer>
 
     <!-- child of the body tag -->
-<span id="top-link-block" class="hidden">
-    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-        <i class="glyphicon glyphicon-chevron-up chevron"></i>
-    </a>
-</span><!-- /top-link-block -->
+    <span id="top-link-block" class="hidden">
+        <a href="#top" id="backToTop" class="well well-sm">
+            <i class="glyphicon glyphicon-chevron-up chevron"></i>
+        </a>
+    </span><!-- /top-link-block -->
 
     <!-- Jquery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -185,8 +213,5 @@
     <script src="http://use.edgefonts.net/gfs-didot;source-sans-pro.js"></script>
 
     <script type="text/javascript" src="main.js"></script>
-    <script>
-
-</script>
 </body>
 </html>
