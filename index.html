@@ -158,6 +158,7 @@
 
 
 
+
    <footer>
       <div class="container">
         <div class="row">
@@ -168,11 +169,24 @@
         </div>
       </div>
     </footer>
+
+    <!-- child of the body tag -->
+<span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up chevron"></i>
+    </a>
+</span><!-- /top-link-block -->
+
     <!-- Jquery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Bootstrap CDN javascript -->
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!-- Fonts: Didot, Source Sans -->
     <script src="http://use.edgefonts.net/gfs-didot;source-sans-pro.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+
+</script>
 </body>
 </html>

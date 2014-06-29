@@ -94,3 +94,19 @@ footer {
   /*background: rgba(255,255,255,0.9);*/
   margin-top: 45px;
 }
+
+/*back to top*/
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    right: 10px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    right: 10px;
+}
+
+.chevron {
+  color: #f36d28;
+}
