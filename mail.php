@@ -1,4 +1,9 @@
 <?php
+
+public function mailTo($value='')
+{
+    # code...
+}
 $to = 'scatzz88@gmail.com';
 
 $subject = 'Website contact';
